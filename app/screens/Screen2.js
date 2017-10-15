@@ -15,7 +15,7 @@ class Screen2 extends Component {
         return (
             <View style={styles.main}>
                 <Text>{I18n.t('bye')}</Text>
-                <Text>{I18n.currentLocale()}</Text>
+                <Text>Locale: {I18n.currentLocale()}</Text>
                 <TouchableOpacity onPress={() => this.handleNavigation()}>
                 <Text>{I18n.t("goScreen", {number: "1"})}</Text>
                 </TouchableOpacity>
